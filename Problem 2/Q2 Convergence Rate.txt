@@ -1,0 +1,8 @@
+From running our script we see..
+
+Convergence rates: Any[1.9835587880671286, 1.9932513841621147, 1.9474552799364122]
+Average convergence rate: 1.974755150721885
+
+Convergence rate is ~ 2 which indicates a convergence rate of:
+
+O(h^2)

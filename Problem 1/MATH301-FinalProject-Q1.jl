@@ -79,5 +79,18 @@ savefig("error_convergence.png")
 
 display(p)
 
+
+
 println("Computation completed successfully! The plot should now appear.")
 
+rates = []
+for j in 1:length(mesh_sizes)-1
+    rate = (log(errors[j+1]) - log(errors[j])) / (log(mesh_sizes[j+1]) - log(mesh_sizes[j]))
+    push!(rates, rate)
+end
+println("Convergence rates: ", rates)
+
+average_rate = sum(rates) / length(rates)
+println("Average Convergence Rate: $average_rate")
+
+println("Problem 1 Errors: ", errors)

@@ -10,8 +10,8 @@ function refine_mesh(p, t, num_refinements)
     for r in 1:num_refinements
         println("Refinement step $r: Before refinement → Nodes: ", size(p,2), ", Elements: ", size(t,2))
         
-        p, t = retessellate(p, t) 
-        boundary_nodes = detect_boundary_nodes(t)  
+        p, t = retessellate(p, t)  
+        boundary_nodes = detect_boundary_nodes(t) 
 
         for i in boundary_nodes
             r = sqrt(p[1,i]^2 + p[2,i]^2)
