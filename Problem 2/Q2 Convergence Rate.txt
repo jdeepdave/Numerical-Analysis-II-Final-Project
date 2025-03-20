@@ -1,8 +1,7 @@
 From running our script we see..
 
-Convergence rates: Any[1.9835587880671286, 1.9932513841621147, 1.9474552799364122]
-Average convergence rate: 1.974755150721885
+Quadratic FEM Errors: Any[0.9070929547791448, 0.7791489406653183, 0.7413104985461023, 0.7330858518451261]
+Convergence rates: Any[0.21935126162973165, 0.07182119436801407, 0.016095780601478312]
+Average Convergence rate: 0.10242274553307468
 
-Convergence rate is ~ 2 which indicates a convergence rate of:
-
-O(h^2)
+Convergence rate is ~ .10 which indicates a convergence rate slower than we would want for quadratic FEM (~2). 
